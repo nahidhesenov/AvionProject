@@ -1,5 +1,11 @@
 import { Input } from "@mui/material"
 import { useState } from "react";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import PinterestIcon from '@mui/icons-material/Pinterest';
 
 const Footer = () => {
 
@@ -37,7 +43,7 @@ const Footer = () => {
                         <h3 style={{ fontFamily: "sans-serif", color: 'rgba(255, 255, 255, 1)', fontWeight: "400" }}>Privacy</h3>
                         <h3 style={{ fontFamily: "sans-serif", color: 'rgba(255, 255, 255, 1)', fontWeight: "400" }}>Returns policy</h3>
                     </div>
-                    <div style={{ display:"flex", flexDirection:"column",gap:"15px", width: "40%" }}>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "15px", width: "40%" }}>
                         <h3 style={{ fontFamily: "sans-serif", color: 'rgba(255, 255, 255, 1)', fontWeight: "400" }}>Join our mailing list</h3>
                         <form style={{ display: 'flex' }} id="demo">
                             <Input
@@ -58,6 +64,18 @@ const Footer = () => {
                                 Sign up
                             </button>
                         </form>
+                    </div>
+                </div>
+                <hr style={{ borderColor: "rgba(78, 77, 147, 1)" }} />
+                <div style={{ padding: "30px 0px",display:'flex',justifyContent:"space-between" }}>
+                    <h3 style={{ fontFamily: "sans-serif", color: 'rgba(255, 255, 255, 1)', fontWeight: "400" }}>Copyright 2022 Avion LTD</h3>
+                    <div style={{display:'flex',gap:'20px'}}>
+                    <LinkedInIcon style={{color:'rgba(255, 255, 255, 1)', cursor:'pointer'}}/>
+                    <FacebookIcon style={{color:'rgba(255, 255, 255, 1)', cursor:'pointer'}}/>
+                    <InstagramIcon style={{color:'rgba(255, 255, 255, 1)', cursor:'pointer'}}/>
+                    <TelegramIcon style={{color:'rgba(255, 255, 255, 1)', cursor:'pointer'}}/>
+                    <TwitterIcon style={{color:'rgba(255, 255, 255, 1)', cursor:'pointer'}}/>
+                    <PinterestIcon style={{color:'rgba(255, 255, 255, 1)', cursor:'pointer'}}/>
                     </div>
                 </div>
             </div>
