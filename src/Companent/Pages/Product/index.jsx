@@ -42,21 +42,22 @@ const Product = () => {
                             </div>
 
                         </div>
-                        <div style={{display:"flex",justifyContent:"space-between"}}>
+                        <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <div style={{ display: 'flex', gap: '0px 15px', width: "40%", alignItems: 'center' }}>
                                 <h3 style={{ fontFamily: "sans-serif", color: 'rgba(42, 37, 75, 1)', fontWeight: "400" }}>Amount:</h3>
-                                <div style={{ display: "flex", width: "50%",height:'100%', alignItems: 'center',backgroundColor:"rgba(249, 249, 249, 1)" }}>
-                                    <button style={{ width: "30%", border: "none", padding: "15px" ,background:'none',color:'rgba(202, 198, 218, 1)' }}>-</button>
+                                <div style={{ display: "flex", width: "50%", height: '100%', alignItems: 'center', backgroundColor: "rgba(249, 249, 249, 1)" }}>
+                                    <button style={{ width: "30%", border: "none", padding: "15px", background: 'none', color: 'rgba(202, 198, 218, 1)' }}>-</button>
                                     <p style={{ width: '40%', textAlign: 'center', fontFamily: "sans-serif", color: 'rgba(42, 37, 75, 1)', fontWeight: "400" }}>1</p>
-                                    <button style={{ width: "30%", border: "none", padding: "15px" ,background:'none',color:'rgba(202, 198, 218, 1)' }}>+</button>
+                                    <button style={{ width: "30%", border: "none", padding: "15px", background: 'none', color: 'rgba(202, 198, 218, 1)' }}>+</button>
                                 </div>
                             </div>
-                            <button style={{padding:"20px 40px",border:'none',backgroundColor:'rgba(42, 37, 75, 1)', color:'rgba(255, 255, 255, 1)',fontSize:'20px'}}>Add to cart</button>
+                            <button style={{ padding: "20px 40px", border: 'none', backgroundColor: 'rgba(42, 37, 75, 1)', color: 'rgba(255, 255, 255, 1)', fontSize: '20px' }}>Add to cart</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style={{ margin: "auto 100px" }}>
+            <div style={{ margin: "100px 100px" }}>
+                <h1 style={{ fontFamily: "sans-serif", color: 'rgba(42, 37, 75, 1)', fontWeight: "400" }}>You might also like</h1>
                 <CollectionComponent />
                 <BrandComponent />
             </div>
