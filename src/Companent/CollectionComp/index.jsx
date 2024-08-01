@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const CollectionComponent = () => {
@@ -33,13 +34,13 @@ const CollectionComponent = () => {
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 {
                     collectionArr.map(({ id, img, text, price }) => {
-                        return <div style={{ width: '23%', display: "flex", flexDirection: "column", gap: '20px' }} key={id}>
+                        return <Link to={"/product"} style={{ width: '23%', display: "flex", flexDirection: "column", gap: '20px', textDecoration: "none" }} key={id}>
                             <div style={{ height: "80%" }}>
                                 <img style={{ width: '100%', height: '100%', objectFit: "cover" }} src={img} alt="" />
                             </div>
                             <h3 style={{ fontWeight: "400", fontFamily: "system-ui", color: "rgba(42, 37, 75, 1)" }}>{text}</h3>
                             <p style={{ fontFamily: "system-ui", color: "rgba(42, 37, 75, 1)" }}>{price}</p>
-                        </div>
+                        </Link>
                     })
                 }
             </div>
