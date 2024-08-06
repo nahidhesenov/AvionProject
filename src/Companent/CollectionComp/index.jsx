@@ -45,7 +45,7 @@ const CollectionComponent = () => {
                 }
             </div>
             <div style={{ display: "flex", justifyContent: "center" }}>
-                <button style={{ width: "20%", padding: '20px', border: "none", backgroundColor: "rgba(249, 249, 249, 1)", fontSize: "20px" }}>View collection</button>
+                <Link to={"/productlisting"} style={{ color: "rgba(42, 37, 75, 1)", textAlign: "center", fontWeight: "400", fontFamily: "system-ui", width: "20%", padding: '20px', border: "none", backgroundColor: "rgba(249, 249, 249, 1)", fontSize: "20px", textDecoration: "none" }}>View collection</Link>
             </div>
         </div>
     )
