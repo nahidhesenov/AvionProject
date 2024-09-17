@@ -4,6 +4,8 @@ import Product from '../Pages/Product'
 import Basket from '../Pages/Basket'
 import ProductListing from '../Pages/ProductListing'
 import Services from '../Pages/ServicesPage'
+import About from '../Pages/About'
+import Contact from '../Pages/Contact'
 
 const RoutesComp = () => {
   return (
@@ -13,6 +15,8 @@ const RoutesComp = () => {
         <Route path="/basket" element={<Basket/>} />
         <Route path="/productlisting" element={<ProductListing/>} />
         <Route path="/services" element={<Services/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
     </Routes>
   )
 }
